@@ -1,0 +1,28 @@
+
+set from="jeff.downing@mybrighthouse.com"
+set realname="Jeff Downing"
+
+set imap_user="jsdowning"
+set imap_pass="p54!yoxa"
+bind index "\Ca" 'imap-fetch-mail'
+
+set folder={mail.mybrighthouse.com}
+set spoolfile={mail.mybrighthouse.com}INBOX
+fcc-hook ~A {mail.mybrighthouse.com}"Sent Items"
+set copy=yes
+set editor = "vim -c 'set spell'"
+#set query_command="~/bin/ldap.pl '%s'"
+set mail_check=5
+set beep_new
+auto_view text/html
+
+bind editor "\t" complete-query
+
+set forward_quote
+set include
+set indent_str="> "
+set ispell="aspell -e -c"
+set print_command="a2ps"
+
+alias Kate.Fox \"Fox, Kate\" <Kate.Fox@mybrighthouse.com>
+alias Zack.Turnbow \"Turnbow, Zack" <Zac.Turnbow@mybrighthouse.com>
