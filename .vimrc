@@ -1,10 +1,7 @@
 set nocompatible
 
+" Initial completion
 filetype plugin indent on
-
-autocmd FileType java setlocal sw=4 ts=4 sts=4
-autocmd FileType json setlocal sw=4 ts=4 sts=4
-
 set ofu=syntaxcomplete#Complete
 
 " Color Setup
