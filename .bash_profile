@@ -17,13 +17,11 @@ alias ll='ls -hl'
 
 # MacPorts Installer addition on 2013-03-14_at_10:18:58: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export PATH=$PATH:jsdowning@Jeffs-MacBook-Pro:~/Downloads/adt-bundle-mac-x86_64-20130219/sdk/platform-tools
-export PATH=$PATH:jsdowning@Jeffs-MacBook-Pro:~/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools
-# Finished adapting your PATH environment variable for use with MacPorts.
+export LIBS=/Users/JSDowning/ExternalLibraries
+export GROOVY_HOME=$LIBS/groovy
+export GRAILS_HOME=$LIBS/grails
+export GRADLE_HOME=$LIBS/gradle
+
+export PATH=$PATH:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$GRADLE_HOME/bin
 
 
-export PATH=/Users/jsdowning/bin/Sencha/Cmd/3.0.2.288:$PATH
-
-export SENCHA_CMD_3_0_0="/Users/jsdowning/bin/Sencha/Cmd/3.1.1.274"
-
-export PATH=/Users/jsdowning/bin/Sencha/Cmd/3.1.1.274:$PATH
